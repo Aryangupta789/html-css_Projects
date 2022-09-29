@@ -76,3 +76,42 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
 }
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:nth-child(even) {
+  /* can even use the exact child like 1,3 etc */
+  /* color: red; */
+}
+li:last-child {
+  font-style: italic;
+}
+
+/* missconception: this will not work */
+article p:first-child {
+  color: red;
+}
+
+/* styling the hyperlinks */
+a:link {
+  /* only targets those elements that has href elements*/
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline red;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
